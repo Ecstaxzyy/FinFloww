@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis Suku Bunga Real-Time</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Analisis Suku Bunga Real-Time</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Grafik Pergerakan Suku Bunga -->
+        <section id="graph-section">
+            <h2>Grafik Pergerakan Suku Bunga</h2>
+            <canvas id="interestRateChart"></canvas>
+        </section>
+
+        <!-- Simulasi Perhitungan Cicilan -->
+        <section id="simulation-section">
+            <h2>Simulasi Perhitungan Cicilan</h2>
+            <div>
+                <!-- Tambahan opsi analisis -->
+                <label for="calculationType">Pilih Jenis Analisis:</label>
+                <select id="calculationType">
+                    <option value="kpr">KPR</option>
+                    <option value="subsidi">Subsidi</option>
+                </select>
+
+                <label for="loanAmount">Jumlah Pinjaman (Rp):</label>
+                <input type="number" id="loanAmount" placeholder="Contoh: 1000000" />
+
+                <label for="loanTerm">Periode Pinjaman (tahun):</label>
+                <input type="number" id="loanTerm" placeholder="Contoh: 12" />
+
+                <label for="interestRate">Tingkat Suku Bunga (%):</label>
+                <input type="number" id="interestRate" placeholder="Contoh: 3.5" />
+
+                <button id="calculateButton">Hitung Cicilan</button>
+            </div>
+            <div id="results">
+                <h3>Hasil Perhitungan:</h3>
+                <p id="selectedType">Jenis Analisis: -</p>
+                <p id="monthlyPayment">Cicilan Bulanan: Rp 0</p>
+                <p id="totalPayment">Total Pembayaran: Rp 0</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FinFlow. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

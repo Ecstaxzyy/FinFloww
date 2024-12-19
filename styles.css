@@ -1,0 +1,141 @@
+/* Reset dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Header Styling */
+header {
+    background-color: #a08234;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0.5rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section dan Kontainer */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Membatasi ukuran gambar agar tidak terlalu besar */
+img {
+    max-width: 100%;   /* Gambar tidak akan melebihi parent-nya */
+    height: auto;      /* Menjaga rasio aspek gambar */
+    display: block;    /* Menghindari spasi ekstra di bawah gambar */
+    margin: 0 auto;    /* Gambar rata tengah */
+}
+
+/* Styling khusus untuk gambar ikon menu */
+.menu-item img {
+    width: 80px;        /* Lebar ikon menu */
+    height: 80px;       /* Tinggi ikon menu */
+    object-fit: contain; /* Memastikan gambar tidak terpotong */
+}
+
+/* Styling khusus untuk gambar profil */
+#profile-pic {
+    width: 150px;       /* Lebar maksimum gambar profil */
+    height: 150px;      /* Tinggi maksimum gambar profil */
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    object-fit: cover;  /* Memastikan gambar menutupi area dengan rapi */
+    margin-bottom: 10px;
+}
+
+/* Grid untuk menu di halaman utama */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.1);
+    color: #fef68b;
+}
+
+/* Tombol Simulasi Perhitungan */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #fef68b;
+}
+
+/* Input Form Simulasi */
+input[type="number"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #745100;
+    color: white;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Styling untuk canvas grafik */
+canvas {
+    margin: 20px auto;
+    display: block;
+    max-width: 600px;
+    height: 300px;
+}

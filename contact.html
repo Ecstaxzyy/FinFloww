@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - FinFlow</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Gaya dasar */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #a08234;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #a08234;
+            border-top: 1px solid #ddd;
+        }
+
+        /* Tata letak untuk bagian kontak */
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .text-container {
+            flex: 2 1 300px;
+        }
+
+        .image-container {
+            flex: 1 1 200px;
+            max-width: 250px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kontak</h1>
+    </header>
+
+    <main>
+        <section>
+            <!-- Kontainer Teks -->
+            <div class="text-container">
+                <h2>Hubungi Kami</h2>
+                <p>
+                    Jika Anda memiliki pertanyaan atau membutuhkan bantuan lebih lanjut, jangan ragu untuk menghubungi kami melalui informasi di bawah ini:
+                </p>
+                <p>Email: 
+                    <a href="mailto:finflow43@gmail.com?subject=Pertanyaan%20dari%20Pengguna%20FinFlow" target="_blank">
+                        finflow43@gmail.com
+                    </a>
+                </p>
+                <p>Telepon: 
+                    <a href="https://wa.me/6282197283498?text=Halo%20FinFlow%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20Anda." target="_blank">
+                        +62 821 9728 3498
+                    </a>
+                </p>
+                <p>Alamat: Jl. Bau Massepe No. 15, Parepare, Indonesia</p>
+            </div>
+            <!-- Gambar di Sebelah Kanan -->
+            <div class="image-container">
+                <img src="gambar-kontak.png" alt="Gambar Kontak">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FinFlow. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>
